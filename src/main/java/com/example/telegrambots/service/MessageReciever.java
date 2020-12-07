@@ -74,10 +74,7 @@ public class MessageReciever implements Runnable {
                 SystemOption systemOption = new SystemOption(bot);
                 log.info("Option for com.example.telegrambots.command[" + command.toString() + "] is: " + systemOption);
                 return systemOption;
-//            case NOTIFY:
-//                NotifyOption notifyOption = new NotifyOption(bot);System.out.println("Option for com.example.telegrambots.command[\" + com.example.telegrambots.command.toString() + \"] is: " + notifyOption);
-//                log.info("Option for com.example.telegrambots.command[" + command.toString() + "] is: " + notifyOption);
-//                return notifyOption;
+      
             case TRAIN:
                 TrainOption trainOption=new TrainOption(bot);
                 log.info("Option for com.example.telegrambots.command[" + command.toString() + "] is: " + trainOption);
