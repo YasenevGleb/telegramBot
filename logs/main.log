@@ -1,0 +1,18 @@
+2020-12-07 11:48:00,508[INFO ][main            ][com.example.telegrambots.bot.Bot] - STARTED TelegramAPI. Bot Connected. Bot class: com.example.telegrambots.bot.Bot@505a9d7c
+2020-12-07 11:48:00,510[INFO ][MsgReciever     ][grambots.service.MessageReciever] - [STARTED] MsgReciever.  Bot class: com.example.telegrambots.bot.Bot@505a9d7c
+2020-12-07 11:48:00,511[INFO ][MsgSender       ][legrambots.service.MessageSender] - [STARTED] MsgSender.  Bot class: com.example.telegrambots.bot.Bot@505a9d7c
+2020-12-07 11:48:28,649[INFO ][MsgReciever     ][grambots.service.MessageReciever] - Option for com.example.telegrambots.command[TRAIN] is: com.example.telegrambots.options.TrainOption@796287da
+2020-12-07 11:48:29,715[INFO ][Thread-4        ][ample.telegrambots.ability.Train] - Send Request. com.example.telegrambots.ability.Train@476e623c
+2020-12-07 11:48:30,396[ERROR][Thread-4        ][ample.telegrambots.ability.Train] - 
+Unexpected character (<) at position 0.
+	at org.json.simple.parser.Yylex.yylex(Unknown Source)
+	at org.json.simple.parser.JSONParser.nextToken(Unknown Source)
+	at org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at com.example.telegrambots.ability.Train.sendGetRequest(Train.java:117)
+	at com.example.telegrambots.ability.Train.getSecondMessage(Train.java:55)
+	at com.example.telegrambots.ability.Train.run(Train.java:39)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2020-12-07 11:48:30,402[INFO ][Thread-4        ][ample.telegrambots.ability.Train] - FIHISH. com.example.telegrambots.ability.Train@476e623c
+2020-12-07 11:48:49,728[INFO ][MsgReciever     ][grambots.service.MessageReciever] - Option for com.example.telegrambots.command[ID] is: com.example.telegrambots.options.SystemOption@d440aac
