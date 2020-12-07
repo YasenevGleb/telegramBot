@@ -64,7 +64,7 @@ public class MessageReciever implements Runnable {
 
     private AbstractOption getOptionForCommand(Command command) {
         if (command == null) {
-            log.warn("Null com.example.telegrambots.command accepted.");
+            log.warn("Null command accepted.");
             return new DefaultOption(bot);
         }
         switch (command) {
@@ -72,16 +72,16 @@ public class MessageReciever implements Runnable {
             case HELP:
             case ID:
                 SystemOption systemOption = new SystemOption(bot);
-                log.info("Option for com.example.telegrambots.command[" + command.toString() + "] is: " + systemOption);
+                log.info("command[" + command.toString() + "] is: " + systemOption);
                 return systemOption;
       
             case TRAIN:
                 TrainOption trainOption=new TrainOption(bot);
-                log.info("Option for com.example.telegrambots.command[" + command.toString() + "] is: " + trainOption);
+                log.info("Option for command[" + command.toString() + "] is: " + trainOption);
                 return trainOption;
 
             default:
-                log.info("Option for com.example.telegrambots.command[" + command.toString() + "] not Set. Return DefaultOption");
+                log.info("Option for command[" + command.toString() + "] not Set. Return DefaultOption");
                 return new DefaultOption(bot);
         }
     }
